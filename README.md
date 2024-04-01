@@ -1,5 +1,7 @@
 # Project solar panel inspection
 
+More documentation can be found at **ADD GH PAGES LINK**
+
 Project dependencies:
 
 https://github.com/aerostack2/as2_external_object_to_tf 

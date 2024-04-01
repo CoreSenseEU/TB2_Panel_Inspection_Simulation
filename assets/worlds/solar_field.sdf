@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+
+<sdf version="1.6">
+    <world name="solar_field">
+        <physics name="4ms" type="ignored">
+            <max_step_size>0.004</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin
+            filename="ignition-gazebo-physics-system"
+            name="ignition::gazebo::systems::Physics">
+        </plugin>
+        <plugin
+            filename="ignition-gazebo-scene-broadcaster-system"
+            name="ignition::gazebo::systems::SceneBroadcaster">
+        </plugin>
+        <plugin
+            filename="ignition-gazebo-user-commands-system"
+            name="ignition::gazebo::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="ignition-gazebo-sensors-system"
+            name="ignition::gazebo::systems::Sensors">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+
+        <light type="directional"
+            name="sun">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>-0.5 0.1 -0.9</direction>
+        </light>
+
+        <scene>
+            <sky>
+                <clouds>
+                    <speed>2</speed>
+                </clouds>
+            </sky>
+        </scene>
+
+        <!-- <include>
+            <uri>model://ground_plane</uri>
+        </include> -->
+
+        <include>
+            <uri>model://grass_patch</uri>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel0</name>
+            <pose>20 3.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel1</name>
+            <pose>20 7.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel2</name>
+            <pose>20 10.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel3</name>
+            <pose>20 14.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel4</name>
+            <pose>20 17.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel5</name>
+            <pose>20 21.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel6</name>
+            <pose>20 24.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel7</name>
+            <pose>20 28.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel8</name>
+            <pose>20 31.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel9</name>
+            <pose>20 35.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel10</name>
+            <pose>23.5 3.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel11</name>
+            <pose>23.5 7.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel12</name>
+            <pose>23.5 10.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel13</name>
+            <pose>23.5 14.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel14</name>
+            <pose>23.5 17.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel15</name>
+            <pose>23.5 21.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel16</name>
+            <pose>23.5 24.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel17</name>
+            <pose>23.5 28.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel18</name>
+            <pose>23.5 31.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel19</name>
+            <pose>23.5 35.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel20</name>
+            <pose>27.0 3.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel21</name>
+            <pose>27.0 7.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel22</name>
+            <pose>27.0 10.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel23</name>
+            <pose>27.0 14.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel24</name>
+            <pose>27.0 17.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel25</name>
+            <pose>27.0 21.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel26</name>
+            <pose>27.0 24.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel27</name>
+            <pose>27.0 28.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel28</name>
+            <pose>27.0 31.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel29</name>
+            <pose>27.0 35.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel30</name>
+            <pose>30.5 3.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel31</name>
+            <pose>30.5 7.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel32</name>
+            <pose>30.5 10.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel33</name>
+            <pose>30.5 14.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel34</name>
+            <pose>30.5 17.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel35</name>
+            <pose>30.5 21.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel36</name>
+            <pose>30.5 24.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel37</name>
+            <pose>30.5 28.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel38</name>
+            <pose>30.5 31.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel39</name>
+            <pose>30.5 35.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel40</name>
+            <pose>34.0 3.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel41</name>
+            <pose>34.0 7.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel42</name>
+            <pose>34.0 10.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel43</name>
+            <pose>34.0 14.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel44</name>
+            <pose>34.0 17.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel45</name>
+            <pose>34.0 21.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel46</name>
+            <pose>34.0 24.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel47</name>
+            <pose>34.0 28.0 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel48</name>
+            <pose>34.0 31.5 0.45 0 0.6 3.14</pose>
+        </include>
+        <include>
+            <uri>model://solar_panel</uri>
+            <name>panel49</name>
+            <pose>34.0 35.0 0.45 0 0.6 3.14</pose>
+        </include>
+
+    </world>
+</sdf>

@@ -1,0 +1,47 @@
+---
+objects:
+  - type: pose_static
+    frame: panel_0
+    pose:
+      position:
+        x: 20.0
+        y: 3.5
+        z: 0.0
+      orientation:
+        r: 0.0
+        p: 0.60
+        y: 3.14
+  - type: pose_static
+    frame: panel_10
+    pose:
+      position:
+        x: 23.50
+        y: 3.5
+        z: 0.0
+      orientation:
+        r: 0.0
+        p: 0.60
+        y: 3.14
+  - type: pose_static
+    frame: panel_20
+    pose:
+      position:
+        x: 27.0
+        y: 3.5
+        z: 0.0
+      orientation:
+        r: 0.0
+        p: 0.60
+        y: 3.14
+  - type: pose_static
+    frame: panel_30
+    pose:
+      position:
+        x: 30.5
+        y: 3.5
+        z: 0.0
+      orientation:
+        r: 0.0
+        p: 0.60
+        y: 3.14
+

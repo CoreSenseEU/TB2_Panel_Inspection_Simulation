@@ -1,0 +1,29 @@
+{
+    "world_name": "{{ world_name | default("empty") }}",
+    "origin": {"latitude": 40.337236, "longitude": -3.886678, "altitude": 800.0},
+    "drones": [
+    {%- for drone in drones %}
+        {
+            "model_type": "quadrotor_base",
+            "model_name": {{ drone.name }},
+            "xyz": {{ drone.xyz }},
+            "rpy": {{ drone.rpy }},
+            "flight_time": 60,
+            "payload": [
+                {
+                    "model_type": "gps",
+                    "model_name": "gps"
+                },
+                {
+                    "model_name": "gb",
+                    "model_type": "gimbal_position",
+                    "payload": {
+                        "model_name": "hd_camera",
+                        "model_type": "hd_camera"
+                    }
+                }
+            ]
+        }{% if not loop.last %},{% endif %}
+    {% endfor -%}
+    ]
+}

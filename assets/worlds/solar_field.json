@@ -1,0 +1,93 @@
+{
+    "world_name": "solar_field",
+    "origin": {"latitude": 40.337236, "longitude": -3.886678, "altitude": 800.0},
+    "drones": [
+        {
+            "model_type": "quadrotor_base",
+            "model_name": "drone0",
+            "xyz": [0, 0, 0],
+            "rpy": [0, 0, 0.0],
+            "flight_time": 60,
+            "payload": [
+                {
+                    "model_type": "gps",
+                    "model_name": "gps"
+                },
+                {
+                    "model_name": "gb",
+                    "model_type": "gimbal_position",
+                    "payload": {
+                        "model_name": "hd_camera",
+                        "model_type": "hd_camera"
+                    }
+                }
+            ]
+        },
+    
+        {
+            "model_type": "quadrotor_base",
+            "model_name": "drone1",
+            "xyz": [0, 2.0, 0],
+            "rpy": [0, 0, 0.0],
+            "flight_time": 60,
+            "payload": [
+                {
+                    "model_type": "gps",
+                    "model_name": "gps"
+                },
+                {
+                    "model_name": "gb",
+                    "model_type": "gimbal_position",
+                    "payload": {
+                        "model_name": "hd_camera",
+                        "model_type": "hd_camera"
+                    }
+                }
+            ]
+        },
+    
+        {
+            "model_type": "quadrotor_base",
+            "model_name": "drone2",
+            "xyz": [0, 4.0, 0],
+            "rpy": [0, 0, 0.0],
+            "flight_time": 60,
+            "payload": [
+                {
+                    "model_type": "gps",
+                    "model_name": "gps"
+                },
+                {
+                    "model_name": "gb",
+                    "model_type": "gimbal_position",
+                    "payload": {
+                        "model_name": "hd_camera",
+                        "model_type": "hd_camera"
+                    }
+                }
+            ]
+        },
+    
+        {
+            "model_type": "quadrotor_base",
+            "model_name": "drone3",
+            "xyz": [0, 6.0, 0],
+            "rpy": [0, 0, 0.0],
+            "flight_time": 60,
+            "payload": [
+                {
+                    "model_type": "gps",
+                    "model_name": "gps"
+                },
+                {
+                    "model_name": "gb",
+                    "model_type": "gimbal_position",
+                    "payload": {
+                        "model_name": "hd_camera",
+                        "model_type": "hd_camera"
+                    }
+                }
+            ]
+        }
+    ]
+}

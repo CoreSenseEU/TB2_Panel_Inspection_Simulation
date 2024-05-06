@@ -54,7 +54,7 @@ record_rosbag="false"
 launch_keyboard_teleop=${launch_keyboard_teleop:="false"}
 drone_namespace="drone"
 
-export IGN_GAZEBO_RESOURCE_PATH=$PWD/assets/worlds:$PWD/assets/models:$IGN_GAZEBO_RESOURCE_PATH
+export GZ_SIM_RESOURCE_PATH=$PWD/assets/worlds:$PWD/assets/models:$GZ_SIM_RESOURCE_PATH
 
 echo $num_drones
 

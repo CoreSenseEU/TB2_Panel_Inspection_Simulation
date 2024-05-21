@@ -7,20 +7,20 @@
             <real_time_factor>1.0</real_time_factor>
         </physics>
         <plugin
-            filename="ignition-gazebo-physics-system"
-            name="ignition::gazebo::systems::Physics">
+            filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics">
         </plugin>
         <plugin
-            filename="ignition-gazebo-scene-broadcaster-system"
-            name="ignition::gazebo::systems::SceneBroadcaster">
+            filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster">
         </plugin>
         <plugin
-            filename="ignition-gazebo-user-commands-system"
-            name="ignition::gazebo::systems::UserCommands">
+            filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands">
         </plugin>
         <plugin
-            filename="ignition-gazebo-sensors-system"
-            name="ignition::gazebo::systems::Sensors">
+            filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
             <render_engine>ogre2</render_engine>
         </plugin>
 
@@ -47,7 +47,7 @@
             <longitude_deg>{{ origin.longitude }}</longitude_deg>
             <elevation>{{ origin.altitude }}</elevation>
             <heading_deg>0.0</heading_deg><!-- Temporary fix for issue
-            https://bitbucket.org/osrf/gazebo/issues/2022/default-sphericalcoordinates-frame-should -->
+            https://bitbucket.org/osrf/sim/issues/2022/default-sphericalcoordinates-frame-should -->
         </spherical_coordinates> 
     
         {% endif -%}
